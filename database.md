@@ -90,6 +90,33 @@ permalink: database/
 * Name of the category
 
 <div class="message">
+	fx_forum_comments
+</div>
+
+>Here the comments of the topics are saved
+
+| Column Name | Type | Key | Null | Default | Comment
+| ------ | ------ | ------ | ------ | ------ | ------ |
+| id | int (10) | Yes | No | | Autoincrementable |
+| topic | int (10) | | No |
+| author | int (10) | | No |
+| topic | int (10) | | No |
+| commentary | text | | No |
+| date | int (10) | | No |
+
+**topic**
+* ID of the topic, it is taken from <span style="color:red">fx_forum_forums</span>
+
+**author**
+* ID of the creator of the comment, it is taken from [account](https://trinitycore.atlassian.net/wiki/spaces/tc/pages/2130004/account)
+
+**commentary**
+* Commentary
+
+**date**
+* Publication date _**you must use timestamp**_
+
+<div class="message">
 	fx_forum_forums
 </div>
 
