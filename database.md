@@ -76,6 +76,95 @@ permalink: database/
 * Publication date _**you must use timestamp**_
 
 <div class="message">
+	fx_forum_category
+</div>
+
+>Here you will create the forum categories
+
+| Column Name | Type | Key | Null | Default | Comment
+| ------ | ------ | ------ | ------ | ------ | ------ |
+| id | int (10) | Yes | No | | Autoincrementable |
+| categoryName | varchar (100) | | No |
+
+**categoryName**
+* Name of the category
+
+<div class="message">
+	fx_forum_forums
+</div>
+
+>Here you create the sections of the forum categories.
+
+| Column Name | Type | Key | Null | Default | Comment
+| ------ | ------ | ------ | ------ | ------ | ------ |
+| id | int (10) | Yes | No | | Autoincrementable |
+| name | varchar (100) | | No |
+| category | int (10) | | No |
+| description | tex | | No |
+| icon | varchar (100) | | No | icon1.png |
+| type | int (1) | | No | 1 |
+
+**name**
+* Name of the category
+
+**category**
+* ID of the category, it is taken from <span style="color:red">fx_forum_category</span>
+
+**description**
+* A brief description of what the category will be used for
+
+**icon**
+* Icon name next to its .jpg or .png extension
+> You can see the icons available in assets/images/forums/icons
+
+**type**
+* Everyone can see the category
+* Only the STAFF can see the category
+* Everyone can see the category but only the STAFF can create topics
+> The STAFF is defined from the [account_access](https://trinitycore.atlassian.net/wiki/spaces/tc/pages/2130021/account+access#account_access-gmlevel)
+
+<div class="message">
+	fx_forum_topics
+</div>
+
+>Here all the topics are saved.
+
+| Column Name | Type | Key | Null | Default | Comment
+| ------ | ------ | ------ | ------ | ------ | ------ |
+| id | int (10) | Yes | No | | Autoincrementable |
+| forums | int (10) | | No |
+| title | varchar (100) | | No |
+| author | int (10) | | No |
+| date | int (10) | | No |
+| content | tex | | No |
+| locked | tinyint (1) | | No | 0 |
+| pined | tinyint (1) | | No | 0 |
+| archivar | int (1) | | No | 0 |
+
+**forums**
+* ID of the category, it is taken from <span style="color:red">fx_forum_forums</span>
+
+**title**
+* Title of the publication
+
+**author**
+* ID of the creator of the publication, it is taken from [account](https://trinitycore.atlassian.net/wiki/spaces/tc/pages/2130004/account)
+
+**date**
+* Publication date _**you must use timestamp**_
+
+**content**
+* Content of the publication
+
+**locked**
+* 1 = Blocked, can not comment
+* 0 = You can comment
+
+**pined**
+* 1 = It will stand out
+* 0 = Normal
+
+<div class="message">
 	fx_news
 </div>
 
