@@ -117,7 +117,7 @@ permalink: database/
 | author | int (10) | | No |
 
 **id_new**
-* ID of the news, it is taken from <p style="color: red;">fx_news</p>
+* ID of the news, it is taken from <span style="color:red">fx_news</span>
 
 **commentary**
 * Comment for the news
@@ -126,7 +126,7 @@ permalink: database/
 * Date of the comment. **_Timestamp must be used_**
 
 **author**
-* ID of the person who comments. It is taken from [fx_users](https://github.com/fixcore/BlizzCMS/wiki/fx_users)
+* ID of the person who comments. It is taken from <span style="color:red">fx_users</span>
 
 <div class="message">
 	fx_news_top
@@ -143,7 +143,7 @@ permalink: database/
 
 **id_new**
 * Id of the news
->The id is the same as [fx_news](https://github.com/fixcore/BlizzCMS/wiki/fx_news)
+>The id is the same as <span style="color:red">fx_news</span>
 
 <div class="message">
 	fx_questions
@@ -357,7 +357,7 @@ permalink: database/
 
 **question**
 * Question - It will be taken from the registry.
-> They are extracted from [fx_questions](https://github.com/fixcore/BlizzCMS/wiki/fx_questions)
+> They are extracted from <span style="color:red">fx_questions</span>
 
 **answer**
 * Secret answer - It will be taken from the registry.
