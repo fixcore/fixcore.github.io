@@ -34,6 +34,9 @@ menu:
   - title:        Database
     url:          /database
 
+  - title:        Installation
+    url:          https://github.com/fixcore/BlizzCMS/blob/master/README.md
+
 copyright:
   author:         FixCore
   url:            http://fixcore.github.io
