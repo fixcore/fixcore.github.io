@@ -6,6 +6,28 @@ permalink: database/
 ---
 
 <div class="message">
+	fx_changelogs
+</div>
+
+>Here all changes are stored, by date packages.
+
+| Column Name | Type | Key | Null | Default | Comment
+| ------ | ------ | ------ | ------ | ------ | ------ |
+| id | int (10) | Yes | No | | Autoincrementable |
+| title | varchar (100) | No |
+| description | text | | No |
+| date | int (10) | | No |
+
+**title**
+* Package name, try to make it very short.
+
+**description**
+* List of changes.
+
+**date**
+* Creation Date. **_Timestamp must be used_**
+
+<div class="message">
 	fx_chars_annotations
 </div>
 
