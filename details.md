@@ -8,28 +8,28 @@ permalink: details/
 	Available modules
 </div>
 
->Forums
+**Forums**
 * Create Topics
 * Comments
 * Remove comments
 * Pined topics
 
->Home
+**Home**
 * Latest News
 * Upcoming Events
 
->News
+**News**
 * Recent News
 * New Visualization
 
->Changelogs
+**Changelogs**
 * Changelogs List
 
->User Panel
+**User Panel**
 * Change Password
 * Change Email
 
->Admin Panel
+**Admin Panel**
 * Forums
 - Create Category
 - Manage Category
@@ -63,9 +63,9 @@ permalink: details/
 - Change Faction
 - Annotations
 
->Api
+**Api**
 - Create API Character
 
 
->Multi theme
+**Multi theme**
 * Theme predefine
