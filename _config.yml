@@ -35,10 +35,10 @@ menu:
     url:          /database
 
   - title:        Details
-    url:          /details
+    url:          http://projectscms.ml/showthread.php?tid=2&pid=2#pid2
 
   - title:        Installation
-    url:          https://github.com/fixcore/BlizzCMS/blob/master/README.md
+    url:          http://projectscms.ml/showthread.php?tid=1&pid=1#pid1
 
 copyright:
   author:         FixCore
